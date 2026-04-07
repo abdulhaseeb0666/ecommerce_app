@@ -11,7 +11,7 @@ const Navbar = () => {
     {/* LEFT SECTION */}
     <div className="flex items-center gap-3">
       <Image
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfOTbSSEiEXBDYndLMpKOO0EQFZGYDChWE0w&s"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUK3tbTFtn4EKRBdbA3IrN25LtWkh5qs1hhg&s"
         alt="logo"
         width={50}
         height={50}
@@ -26,21 +26,21 @@ const Navbar = () => {
     </div>
 
     {/* NAV LINKS */}
-    <ul className="flex items-center gap-8 text-[15px] font-medium text-gray-600 max-[800px]:flex-wrap max-[700px]:justify-center">
+    <ul className="flex items-center gap-8 text-[15px] font-bold text-gray-600 max-[800px]:flex-wrap max-[700px]:justify-center">
 
-      <Link href="/" className="hover:text-indigo-600 transition duration-200">
+      <Link href="/" className="text-xl hover:text-indigo-600 transition duration-200">
         Home
       </Link>
 
-      <Link href="/products" className="hover:text-indigo-600 transition duration-200">
+      <Link href="/products" className="text-xl hover:text-indigo-600 transition duration-200">
         Products
       </Link>
 
-      <Link href="/about" className="hover:text-indigo-600 transition duration-200">
+      <Link href="/about" className="text-xl hover:text-indigo-600 transition duration-200">
         About
       </Link>
 
-      <Link href="/contact" className="hover:text-indigo-600 transition duration-200">
+      <Link href="/contact" className="text-xl hover:text-indigo-600 transition duration-200">
         Contact
       </Link>
     </ul>

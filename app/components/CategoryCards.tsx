@@ -31,7 +31,7 @@ const CategoryCards = ({ params }: CategoryCardProps) => {
       <Link href={`/products/categories/${slug}`}>
         <button
           className="mt-auto w-full bg-orange-500 text-white font-semibold py-2 rounded-2xl
-                     hover:bg-orange-600 hover:scale-105 transition-transform duration-300 shadow-sm"
+                     hover:bg-orange-600 hover:scale-105 hover:cursor-pointer transition-transform duration-300 shadow-sm"
         >
           Explore Now
         </button>

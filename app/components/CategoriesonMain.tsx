@@ -30,7 +30,7 @@ const CategoriesonMain = () => {
   {/* BUTTON */}
   <div className="flex justify-center">
     <Link href={"/products/categories"}>
-      <button className="bg-gray-100 text-gray-800 font-medium px-6 py-3 rounded-xl hover:bg-gray-200 transition">
+      <button className="bg-gray-200 text-gray-800 font-medium px-6 py-3 rounded-xl hover:bg-gray-300 transition">
         View More
       </button>
     </Link>
