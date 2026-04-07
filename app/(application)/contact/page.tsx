@@ -35,7 +35,7 @@ const page = () => {
         </div>
         <div className="bg-blue-100 p-4 rounded-xl shadow hover:shadow-md transition">
           <h3 className="font-semibold text-blue-800">Email</h3>
-          <p>abdulhaseebah7886786@gmail.com</p>
+          <p className="wrap-break-word">abdulhaseebah7886786@gmail.com</p>
         </div>
       </div>
     </div>
