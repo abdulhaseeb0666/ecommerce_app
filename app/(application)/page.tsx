@@ -13,7 +13,7 @@ export const metadata : Metadata = {
 const Page = () => {
 
   return (
-    <div className="my-12 px-4 md:px-8 space-y-16 bg-[#F8FAFC]" >
+    <div className="md:px-8 space-y-16 bg-[#F8FAFC]" >
 
   <SaleCard />
 

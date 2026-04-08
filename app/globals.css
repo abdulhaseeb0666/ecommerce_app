@@ -10,13 +10,7 @@
 }
 
 .dark {
-  --bg-primary: #1f2937;
-  --bg-secondary: #111827;
-  --text-primary: #f9fafb;
-  --text-secondary: #d1d5db;
-  --accent-color: #3b82f6;
-  --btn-bg: #f97316;
-  --btn-hover: #ea580c;
+  background: #000;
 }
 
 @theme {
