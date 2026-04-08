@@ -61,64 +61,60 @@ const Navbar = () => {
             </button>
           </Link>
         </div>
+          {
+            menu && (
+              <div className="fixed inset-0 z-50 backdrop-blur-md bg-white/40">
+                {/* FULL WIDTH PANEL */}
+                <div className="w-full relative h-full bg-white/90 flex flex-col ">
 
-                {
-                  menu && (
-                    <div className="fixed inset-0 z-50 backdrop-blur-md bg-white/40">
+                  {/* TOP BAR */}
+                  <div className="flex justify-between items-center p-5">
+                    <h1 className="text-2xl font-extrabold bg-linear-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+                      Menu
+                    </h1>
 
-          {/* FULL WIDTH PANEL */}
-          <div className="w-full relative h-full bg-white/90 flex flex-col ">
-
-            {/* TOP BAR */}
-            <div className="flex justify-between items-center p-5">
-              <h1 className="text-2xl font-extrabold bg-linear-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
-                Menu
-              </h1>
-
-              <X
-                size={30}
-                className="cursor-pointer text-gray-700 hover:text-red-500 transition"
-                onClick={() => setmenu(false)}
-              />
-            </div>
-
-            {/* NAV LINKS */}
-            <div className="flex w-full relative border-b shadow-2xl p-2 flex-col gap-5">
-                    <div className="bg-white/80 absolute inset-0 -z-10" />
-              {[
-                { name: "Home", href: "/" },
-                { name: "Products", href: "/products" },
-                { name: "About", href: "/about" },
-                { name: "Contact", href: "/contact" },
-              ].map((item, i) => (
-                <Link key={i} href={item.href} onClick={() => setmenu(false)}>
-                  <div className="flex items-center justify-between px-5 py-4 rounded-2xl bg-gray-50 hover:bg-indigo-50 transition shadow-sm hover:shadow-md">
-                    
-                    <span className="text-lg font-semibold text-gray-800 hover:text-indigo-600 transition">
-                      {item.name}
-                    </span>
-
-                    <span className="text-gray-400">→</span>
+                    <X
+                      size={30}
+                      className="cursor-pointer text-gray-700 hover:text-red-500 transition"
+                      onClick={() => setmenu(false)}
+                    />
                   </div>
-                </Link>
-              ))}
 
-              {/* CTA SECTION */}
-              <div className="mt-auto space-y-4">
+                  {/* NAV LINKS */}
+                  <div className="flex w-full relative border-b shadow-2xl p-2 flex-col gap-5">
+                          <div className="bg-linear-to-br from-indigo-600/85 to-purple-600/85 absolute inset-0 -z-10" />
+                    {[
+                      { name: "Home", href: "/" },
+                      { name: "Products", href: "/products" },
+                      { name: "About", href: "/about" },
+                      { name: "Contact", href: "/contact" },
+                    ].map((item, i) => (
+                      <Link key={i} href={item.href} onClick={() => setmenu(false)}>
+                        <div className="flex items-center justify-between px-5 py-4 rounded-2xl bg-gray-50 hover:bg-indigo-50 transition shadow-sm hover:shadow-md">
+                          
+                          <span className="text-lg font-semibold text-gray-800 hover:text-indigo-600 transition">
+                            {item.name}
+                          </span>
 
-                <Link href="/cart" onClick={() => setmenu(false)}>
-                  <button className="w-full bg-linear-to-r from-indigo-500 to-purple-500 text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:scale-[1.02] transition">
-                    🛒 View Cart
-                  </button>
-                </Link>
+                          <span className="text-gray-400">→</span>
+                        </div>
+                      </Link>
+                    ))}
+
+                    {/* CTA SECTION */}
+                    <div className="mt-auto space-y-4">
+
+                      <Link href="/cart" onClick={() => setmenu(false)}>
+                        <button className="w-full bg-linear-to-r from-indigo-500 to-purple-500 text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:scale-[1.02] transition">
+                          🛒 View Cart
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-
-
-          </div>
-        </div>
-                  )
-                }
+            )
+          }
 
 
         {/* Menu Button */}

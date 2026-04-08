@@ -16,9 +16,9 @@ const ProductReview = async ({params} : {params : {reviews : Review[]}}) => {
     {reviews.map(({ reviewerName, reviewerEmail, comment, rating, date }, index) => (
       <div key={index} className="bg-white p-5 rounded-3xl shadow-md border border-gray-100 hover:shadow-xl transition">
         
-        <div className="flex justify-between items-center mb-3 border-b border-gray-100 pb-2">
-          <h3 className="text-blue-700 font-bold">{reviewerName}</h3>
-          <p className="text-gray-400 text-sm">{reviewerEmail}</p>
+        <div className="flex justify-between items-center mb-3 border-b border-gray-100 pb-2 max-[550px]:flex-col max-[550px]:text-xs">
+          <h3 className="text-blue-700 font-bold max-[550px]:text-start w-full">{reviewerName}</h3>
+          <p className="text-gray-400 text-sm max-[550px]:text-start w-full break-all">{reviewerEmail}</p>
         </div>
 
         <p className="text-gray-700 mb-3">{comment}</p>
