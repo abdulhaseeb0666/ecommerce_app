@@ -71,7 +71,7 @@ const page = async ({params} : {params : {productID : string}}) => {
   <div className="my-10">
     <h2 className="text-3xl font-bold text-gray-900 text-center mb-6 border-t border-gray-200 pt-4">Related Products</h2>
     <div className="max-w-7xl mx-auto grid grid-cols-4 gap-6 max-[1200px]:grid-cols-3 max-[900px]:grid-cols-2 max-[600px]:grid-cols-1">
-      {products.map((product : Product, index : number) => (
+      {products.slice(0, 8).map((product : Product, index : number) => (
         <ProductCard key={index} params={{ product, index }} />
       ))}
     </div>
