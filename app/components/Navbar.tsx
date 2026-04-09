@@ -81,8 +81,8 @@ const Navbar = () => {
                   </div>
 
                   {/* NAV LINKS */}
-                  <div className="flex w-full relative border-b shadow-2xl p-2 flex-col gap-5">
-                          <div className="bg-linear-to-br from-indigo-600/85 to-purple-600/85 absolute inset-0 -z-10" />
+                  <div className="flex w-full relative shadow-2xl p-4 flex-col gap-5">
+                      <div className="bg-linear-to-br from-indigo-600 to-purple-600 rounded-2xl m-2 absolute inset-0 -z-10" />
                     {[
                       { name: "Home", href: "/" },
                       { name: "Products", href: "/products" },
