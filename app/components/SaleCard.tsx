@@ -3,7 +3,7 @@ import Advertisement from "./Advertisement"
 
 const SaleCard = () => {
   return (
-    <div className="my-10 mx-5 rounded-3xl overflow-hidden bg-linear-to-br from-indigo-600 via-indigo-400 to-indigo-200 border border-gray-100 shadow-sm flex items-center max-[900px]:flex-col">
+    <div className="my-10 mx-5 rounded-3xl overflow-hidden bg-linear-to-br from-indigo-800 via-indigo-600 to-indigo-400 border border-gray-100 shadow-sm flex items-center max-[900px]:flex-col">
 
   {/* LEFT */}
   <div className="w-1/2 px-12 py-12 flex flex-col justify-center max-[900px]:w-full max-[700px]:text-center max-[700px]:items-center">
