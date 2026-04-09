@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import {  useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 type CartItem = {
   id: string | null;
@@ -104,9 +105,11 @@ const CartClient = () => {
               className="w-28 h-28 object-cover rounded-xl border-2 border-orange-400 shadow-sm max-[500px]:w-full max-[500px]:h-40"
             />
             <div className="flex flex-col justify-between gap-2 w-full">
-              <h2 className="font-bold text-xl text-blue-800 max-[700px]:text-lg max-[500px]:text-base">
-                {item.name}
-              </h2>
+              <Link href={`/products/${item.id}`}>
+                <h2 className="font-bold text-xl text-blue-800 max-[700px]:text-lg max-[500px]:text-base">
+                  {item.name}
+                </h2>
+              </Link>
               <p className="text-gray-700 max-[500px]:text-sm">{item.description}</p>
               <p className="text-gray-800 max-[500px]:text-sm"><b>Quantity:</b> {item.quantity}</p>
               <p className="text-gray-800 max-[500px]:text-sm"><b>Price:</b> ${item.price.toFixed(0)}</p>
